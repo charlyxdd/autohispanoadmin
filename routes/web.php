@@ -12,4 +12,5 @@
 */
 
 //Route::get('/', 'SystemController@welcome');
-Route::get('/', 'SystemController@home');
+Route::get('/home', 'SystemController@home');
+Route::get('/', 'SystemController@login');
