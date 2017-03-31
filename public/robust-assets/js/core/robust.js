@@ -119,7 +119,7 @@
             // Block Element
             block_ele.block({
                 message: '<div class="icon-spinner9 icon-spin icon-lg"></div>',
-                timeout: 2000, //unblock after 2 seconds
+                //timeout: 0, //unblock after 2 seconds
                 overlayCSS: {
                     backgroundColor: '#FFF',
                     cursor: 'wait',
@@ -129,6 +129,7 @@
                     padding: 0,
                     backgroundColor: 'none'
                 }
+
             });
         });
 

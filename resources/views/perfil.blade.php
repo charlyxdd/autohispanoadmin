@@ -1,445 +1,26 @@
-<!DOCTYPE html>
-<html lang="en" data-textdirection="LTR" class="loading">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <meta name="description" content="Robust admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
-    <meta name="keywords" content="admin template, robust admin template, dashboard template, flat admin template, responsive admin template, web app">
-    <meta name="author" content="PIXINVENT">
-    <title>Autohispano - Admin</title>
-    <link rel="apple-touch-icon" sizes="60x60" href="../../../robust-assets/ico/apple-icon-60.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="../../../robust-assets/ico/apple-icon-76.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="../../../robust-assets/ico/apple-icon-120.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="../../../robust-assets/ico/apple-icon-152.png">
-    <link rel="shortcut icon" type="image/x-icon" href="../../../robust-assets/ico/favicon.ico">
-    <link rel="shortcut icon" type="image/png" href="../../../robust-assets/ico/favicon-32.png">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-touch-fullscreen" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <!-- BEGIN VENDOR CSS-->
-    <!-- build:css robust-assets/css/vendors.min.css-->
-    <link rel="stylesheet" type="text/css" href="../../../robust-assets/css/bootstrap.css">
-    <!-- /build-->
-    <!-- BEGIN VENDOR CSS-->
-    <!-- BEGIN Font icons-->
-    <link rel="stylesheet" type="text/css" href="../../../robust-assets/fonts/icomoon.css">
-    <link rel="stylesheet" type="text/css" href="../../../robust-assets/fonts/flag-icon-css/css/flag-icon.min.css">
-    <!-- END Font icons-->
-    <!-- BEGIN Plugins CSS-->
-    <link rel="stylesheet" type="text/css" href="../../../robust-assets/css/plugins/sliders/slick/slick.css">
-    <!-- END Plugins CSS-->
-    
-    <!-- BEGIN Vendor CSS-->
-    <link rel="stylesheet" type="text/css" href="../../../robust-assets/css/plugins/charts/jquery-jvectormap-2.0.3.css">
-    <link rel="stylesheet" type="text/css" href="../../../robust-assets/css/plugins/charts/morris.css">
-    <link rel="stylesheet" type="text/css" href="../../../robust-assets/css/plugins/extensions/unslider.css">
-    <!-- END Vendor CSS-->
-    <!-- BEGIN ROBUST CSS-->
-    <!-- build:css robust-assets/css/app.min.css-->
-    <link rel="stylesheet" type="text/css" href="../../../robust-assets/css/bootstrap-robust.css">
-    <link rel="stylesheet" type="text/css" href="../../../robust-assets/css/components.css">
-    <link rel="stylesheet" type="text/css" href="../../../robust-assets/css/colors.css">
-    <!-- /build-->
-    <!-- END ROBUST CSS-->
-    <!-- BEGIN Page Level CSS-->
-    <link rel="stylesheet" type="text/css" href="../../../robust-assets/css/components/weather-icons/climacons.min.css">
-    <!-- END Page Level CSS-->
-    <!-- BEGIN Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="../../../assets/css/style.css">
-    <!-- END Custom CSS-->
-  </head>
-  <body data-open="hover" data-menu="vertical-mmenu" data-col="2-columns" class="vertical-layout vertical-mmenu 2-columns ">
-    <!-- START PRELOADER-->
-                  <div class="modal fade text-xs-left" id="inlineForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel33" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                          <label class="modal-title text-text-bold-600" id="myModalLabel33">Payment</label>
-                        </div>
-                        <form action="#">
-                            <div class="modal-body">
-                          <label>Card number: </label>
-                          <div class="form-group">
-                            <input type="number" placeholder="# number" class="form-control">
-                          </div>
+@extends('layout.master')
+@section('title','Inicio')
 
-                          <label>Password: </label>
-                          <div class="form-group">
-                            <input type="password" placeholder="Password" class="form-control">
-                          </div>
-                          </div>
-                          <div class="modal-footer">
-                          
-                          <input type="submit" class="btn btn-outline-primary block btn-lg" value="Confirm">
-                          <input type="reset" class="btn btn-outline-secondary block btn-lg" data-dismiss="modal" value="Cancel">
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-
-    <div id="preloader-wrapper">
-      <div id="loader" class="square-spin loader-white">
-        <div></div>
-      </div>
-      <div class="loader-section section-top bg-success"></div>
-      <div class="loader-section section-bottom bg-success"></div>
-    </div>
-
-    <!-- END PRELOADER-->
-
-    <!-- navbar-fixed-top-->
-    <nav class="header-navbar navbar navbar-with-menu navbar-fixed-top navbar-dark navbar-shadow navbar-border">
-      <div class="navbar-wrapper">
-        <div class="navbar-header">
-          <ul class="nav navbar-nav">
-            <li class="nav-item mobile-menu hidden-md-up float-xs-left"><a class="nav-link nav-menu-main menu-toggle hidden-xs"><i class="icon-menu5 font-large-1"></i></a></li>
-            <li class="nav-item"><a href="index.html" class="navbar-brand nav-link"><img alt="branding logo" src="../../../robust-assets/images/logo/robust-logo-light.png" data-expand="../../../robust-assets/images/logo/robust-logo-light.png" data-collapse="../../../robust-assets/images/logo/robust-logo-small.png" class="brand-logo"></a></li>
-            <li class="nav-item hidden-md-up float-xs-right"><a data-toggle="collapse" data-target="#navbar-mobile" class="nav-link open-navbar-container"><i class="icon-ellipsis pe-2x icon-icon-rotate-right-right"></i></a></li>
-          </ul>
-        </div>
-        <div class="navbar-container content container-fluid">
-          <div id="navbar-mobile" class="collapse navbar-toggleable-sm">
-            <ul class="nav navbar-nav">
-              <li class="nav-item hidden-sm-down"><a class="nav-link nav-menu-main menu-toggle hidden-xs"><i class="icon-menu5"></i></a></li>
-              <li class="nav-item nav-search"><a href="#" class="nav-link nav-link-search fullscreen-search-btn"><i class="ficon icon-search7"></i></a></li>
-              <li class="nav-item hidden-sm-down"><a href="#" class="nav-link nav-link-expand"><i class="ficon icon-expand2"></i></a></li>
-              <li class="dropdown nav-item mega-dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle nav-link">Mega</a>
-              <li class="nav-item hidden-sm-down">                  <!-- Button trigger modal -->
-                  <a  class="nav-link" data-toggle="modal" data-target="#inlineForm">Pago</a>
-
-                  <!-- Modal -->
-
-                </li>
-                <ul class="mega-dropdown-menu dropdown-menu row">
-                  <li class="col-md-2">
-                    <h6 class="dropdown-menu-header text-uppercase mb-1"><i class="icon-paper"></i> News</h6>
-                    <div id="mega-menu-carousel-example" class="responsive-slick">
-                      <div><img src="../../../robust-assets/images/slider/slider-2.png" alt="First slide" class="rounded img-fluid mb-1"><a href="#" class="news-title mb-0">Poster Frame PSD</a>
-                        <p class="news-content"><span class="font-small-2">January 26, 2016</span></p>
-                      </div>
-                      <div><img src="../../../robust-assets/images/slider/slider-5.png" alt="First slide" class="rounded img-fluid mb-1"><a href="#" class="news-title mt-1 mb-0">Header MockUp</a>
-                        <p class="news-content"><span class="font-small-2">January 15, 2016</span></p>
-                      </div>
-                      <div><img src="../../../robust-assets/images/slider/slider-6.png" alt="First slide" class="rounded img-fluid mb-1"><a href="#" class="news-title mt-1 mb-0">2 Poster PSD</a>
-                        <p class="news-content"><span class="font-small-2">January 15, 2016</span></p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="col-md-3">
-                    <h6 class="dropdown-menu-header text-uppercase"><i class="icon-shuffle3"></i> Drill down menu</h6>
-                    <ul class="drilldown-menu">
-                      <li class="menu-list">
-                        <ul>
-                          <li><a href="layout-2-columns.html" class="dropdown-item"><i class="icon-layout"></i> Page layouts & Templates</a></li>
-                          <li><a href="#"><i class="icon-layers"></i> Multi level menu</a>
-                            <ul>
-                              <li><a href="#" class="dropdown-item"><i class="icon-share4"></i>  Second level</a></li>
-                              <li><a href="#"><i class="icon-umbrella3"></i> Second level menu</a>
-                                <ul>
-                                  <li><a href="#" class="dropdown-item"><i class="icon-microphone2"></i>  Third level</a></li>
-                                  <li><a href="#" class="dropdown-item"><i class="icon-head"></i> Third level</a></li>
-                                  <li><a href="#" class="dropdown-item"><i class="icon-signal2"></i> Third level</a></li>
-                                  <li><a href="#" class="dropdown-item"><i class="icon-camera8"></i> Third level</a></li>
-                                </ul>
-                              </li>
-                              <li><a href="#" class="dropdown-item"><i class="icon-flag4"></i> Second level, third link</a></li>
-                              <li><a href="#" class="dropdown-item"><i class="icon-box"></i> Second level, fourth link</a></li>
-                            </ul>
-                          </li>
-                          <li><a href="color-palette-primary.html" class="dropdown-item"><i class="icon-marquee-plus"></i> Color pallet system</a></li>
-                          <li><a href="sk-2-columns.html" class="dropdown-item"><i class="icon-edit2"></i> Page starter kit</a></li>
-                          <li><a href="changelog.html" class="dropdown-item"><i class="icon-files-empty"></i> Change log</a></li>
-                          <li><a href="http://support.pixinvent.com/" class="dropdown-item"><i class="icon-tencent-weibo"></i> Customer support center</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="col-md-3">
-                    <h6 class="dropdown-menu-header text-uppercase"><i class="icon-list2"></i> Accordion</h6>
-                    <div id="accordionWrap" role="tablist" aria-multiselectable="true">
-                      <div class="card no-border box-shadow-0 collapse-icon accordion-icon-rotate">
-                        <div id="headingOne" role="tab" class="card-header p-0 pb-1 no-border"><a data-toggle="collapse" data-parent="#accordionWrap" href="#accordionOne" aria-expanded="true" aria-controls="accordionOne" class="card-title">Accordion Group Item #1</a></div>
-                        <div id="accordionOne" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true" class="card-collapse collapse in">
-                          <div class="card-body">
-                            <p class="accordion-text">Caramels dessert chocolate cake pastry jujubes bonbon. Jelly wafer jelly beans. Caramels chocolate cake liquorice cake wafer jelly beans croissant apple pie.</p>
-                          </div>
-                        </div>
-                        <div id="headingTwo" role="tab" class="card-header p-0 pb-1 no-border"><a data-toggle="collapse" data-parent="#accordionWrap" href="#accordionTwo" aria-expanded="false" aria-controls="accordionTwo" class="card-title collapsed">Accordion Group Item #2</a></div>
-                        <div id="accordionTwo" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" class="card-collapse collapse">
-                          <div class="card-body">
-                            <p class="accordion-text">Sugar plum bear claw oat cake chocolate jelly tiramisu dessert pie. Tiramisu macaroon muffin jelly marshmallow cake. Pastry oat cake chupa chups.</p>
-                          </div>
-                        </div>
-                        <div id="headingThree" role="tab" class="card-header p-0 pb-1 no-border"><a data-toggle="collapse" data-parent="#accordionWrap" href="#accordionThree" aria-expanded="false" aria-controls="accordionThree" class="card-title collapsed">Accordion Group Item #3</a></div>
-                        <div id="accordionThree" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" class="card-collapse collapse">
-                          <div class="card-body">
-                            <p class="accordion-text">Candy cupcake sugar plum oat cake wafer marzipan jujubes lollipop macaroon. Cake dragée jujubes donut chocolate bar chocolate cake cupcake chocolate topping.</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="col-md-4">
-                    <h6 class="dropdown-menu-header text-uppercase mb-1"><i class="icon-mail6"></i> Contact Us</h6>
-                    <form>
-                      <fieldset class="form-group position-relative has-icon-left">
-                        <label for="inputName1" class="col-sm-3 form-control-label">Name</label>
-                        <div class="col-sm-9">
-                          <input type="text" id="inputName1" placeholder="John Doe" class="form-control">
-                          <div class="form-control-position"><i class="icon-head"></i></div>
-                        </div>
-                      </fieldset>
-                      <fieldset class="form-group position-relative has-icon-left">
-                        <label for="inputEmail1" class="col-sm-3 form-control-label">Email</label>
-                        <div class="col-sm-9">
-                          <input type="email" id="inputEmail1" placeholder="john@example.com" class="form-control">
-                          <div class="form-control-position"><i class="icon-mail6"></i></div>
-                        </div>
-                      </fieldset>
-                      <fieldset class="form-group position-relative has-icon-left">
-                        <label for="inputMessage1" class="col-sm-3 form-control-label">Message</label>
-                        <div class="col-sm-9">
-                          <textarea id="inputMessage1" rows="2" placeholder="Simple Textarea" class="form-control"></textarea>
-                          <div class="form-control-position"><i class="icon-file-text"></i></div>
-                        </div>
-                      </fieldset>
-                      <div class="col-sm-12 mb-1">
-                        <button type="button" class="btn btn-primary float-xs-right"><i class="icon-send-o"></i> Send</button>
-                      </div>
-                    </form>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="nav navbar-nav float-xs-right">
-              <li class="dropdown dropdown-language nav-item"><a id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link"><i class="flag-icon flag-icon-us"></i><span class="selected-language">English</span></a>
-                <div aria-labelledby="dropdown-flag" class="dropdown-menu"><a href="#" class="dropdown-item"><i class="flag-icon flag-icon-us"></i> English</a><a href="#" class="dropdown-item"><i class="flag-icon flag-icon-es"></i> Spanish</a><a href="#" class="dropdown-item"><i class="flag-icon flag-icon-pt"></i> Portuguese</a><a href="#" class="dropdown-item"><i class="flag-icon flag-icon-fr"></i> French</a></div>
-              </li>
-              <li class="dropdown dropdown-notification nav-item"><a href="#" data-toggle="dropdown" class="nav-link nav-link-label"><i class="ficon icon-bell4"></i><span class="tag tag-pill tag-default tag-danger tag-default tag-up">5</span></a>
-                <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
-                  <li class="dropdown-menu-header">
-                    <h6 class="dropdown-header m-0"><span class="grey darken-2">Notifications</span><span class="notification-tag tag tag-default tag-danger float-xs-right m-0">5 New</span></h6>
-                  </li>
-                  <li class="list-group scrollable-container"><a href="javascript:void(0)" class="list-group-item">
-                      <div class="media">
-                        <div class="media-left valign-middle"><i class="icon-cart3 icon-bg-circle bg-cyan"></i></div>
-                        <div class="media-body">
-                          <h6 class="media-heading">You have new order!</h6>
-                          <p class="notification-text font-small-3 text-muted">Lorem ipsum dolor sit amet, consectetuer elit.</p><small>
-                            <time datetime="2015-06-11T18:29:20+08:00" class="media-meta text-muted">30 minutes ago</time></small>
-                        </div>
-                      </div></a><a href="javascript:void(0)" class="list-group-item">
-                      <div class="media">
-                        <div class="media-left valign-middle"><i class="icon-monitor3 icon-bg-circle bg-red bg-darken-1"></i></div>
-                        <div class="media-body">
-                          <h6 class="media-heading red darken-1">99% Server load</h6>
-                          <p class="notification-text font-small-3 text-muted">Aliquam tincidunt mauris eu risus.</p><small>
-                            <time datetime="2015-06-11T18:29:20+08:00" class="media-meta text-muted">Five hour ago</time></small>
-                        </div>
-                      </div></a><a href="javascript:void(0)" class="list-group-item">
-                      <div class="media">
-                        <div class="media-left valign-middle"><i class="icon-server2 icon-bg-circle bg-yellow bg-darken-3"></i></div>
-                        <div class="media-body">
-                          <h6 class="media-heading yellow darken-3">Warning notifixation</h6>
-                          <p class="notification-text font-small-3 text-muted">Vestibulum auctor dapibus neque.</p><small>
-                            <time datetime="2015-06-11T18:29:20+08:00" class="media-meta text-muted">Today</time></small>
-                        </div>
-                      </div></a><a href="javascript:void(0)" class="list-group-item">
-                      <div class="media">
-                        <div class="media-left valign-middle"><i class="icon-check2 icon-bg-circle bg-green bg-accent-3"></i></div>
-                        <div class="media-body">
-                          <h6 class="media-heading">Complete the task</h6><small>
-                            <time datetime="2015-06-11T18:29:20+08:00" class="media-meta text-muted">Last week</time></small>
-                        </div>
-                      </div></a><a href="javascript:void(0)" class="list-group-item">
-                      <div class="media">
-                        <div class="media-left valign-middle"><i class="icon-bar-graph-2 icon-bg-circle bg-teal"></i></div>
-                        <div class="media-body">
-                          <h6 class="media-heading">Generate monthly report</h6><small>
-                            <time datetime="2015-06-11T18:29:20+08:00" class="media-meta text-muted">Last month</time></small>
-                        </div>
-                      </div></a></li>
-                  <li class="dropdown-menu-footer"><a href="javascript:void(0)" class="dropdown-item text-muted text-xs-center">Read all notifications</a></li>
-                </ul>
-              </li>
-              <li class="dropdown dropdown-notification nav-item"><a href="#" data-toggle="dropdown" class="nav-link nav-link-label"><i class="ficon icon-mail6"></i><span class="tag tag-pill tag-default tag-info tag-default tag-up">8</span></a>
-                <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
-                  <li class="dropdown-menu-header">
-                    <h6 class="dropdown-header m-0"><span class="grey darken-2">Messages</span><span class="notification-tag tag tag-default tag-info float-xs-right m-0">4 New</span></h6>
-                  </li>
-                  <li class="list-group scrollable-container"><a href="javascript:void(0)" class="list-group-item">
-                      <div class="media">
-                        <div class="media-left"><span class="avatar avatar-sm avatar-online rounded-circle"><img src="../../../robust-assets/images/portrait/small/avatar-s-1.png" alt="avatar"><i></i></span></div>
-                        <div class="media-body">
-                          <h6 class="media-heading">Margaret Govan</h6>
-                          <p class="notification-text font-small-3 text-muted">I like your portfolio, let's start the project.</p><small>
-                            <time datetime="2015-06-11T18:29:20+08:00" class="media-meta text-muted">Today</time></small>
-                        </div>
-                      </div></a><a href="javascript:void(0)" class="list-group-item">
-                      <div class="media">
-                        <div class="media-left"><span class="avatar avatar-sm avatar-busy rounded-circle"><img src="../../../robust-assets/images/portrait/small/avatar-s-2.png" alt="avatar"><i></i></span></div>
-                        <div class="media-body">
-                          <h6 class="media-heading">Bret Lezama</h6>
-                          <p class="notification-text font-small-3 text-muted">I have seen your work, there is</p><small>
-                            <time datetime="2015-06-11T18:29:20+08:00" class="media-meta text-muted">Tuesday</time></small>
-                        </div>
-                      </div></a><a href="javascript:void(0)" class="list-group-item">
-                      <div class="media">
-                        <div class="media-left"><span class="avatar avatar-sm avatar-online rounded-circle"><img src="../../../robust-assets/images/portrait/small/avatar-s-3.png" alt="avatar"><i></i></span></div>
-                        <div class="media-body">
-                          <h6 class="media-heading">Carie Berra</h6>
-                          <p class="notification-text font-small-3 text-muted">Can we have call in this week ?</p><small>
-                            <time datetime="2015-06-11T18:29:20+08:00" class="media-meta text-muted">Friday</time></small>
-                        </div>
-                      </div></a><a href="javascript:void(0)" class="list-group-item">
-                      <div class="media">
-                        <div class="media-left"><span class="avatar avatar-sm avatar-away rounded-circle"><img src="../../../robust-assets/images/portrait/small/avatar-s-6.png" alt="avatar"><i></i></span></div>
-                        <div class="media-body">
-                          <h6 class="media-heading">Eric Alsobrook</h6>
-                          <p class="notification-text font-small-3 text-muted">We have project party this saturday night.</p><small>
-                            <time datetime="2015-06-11T18:29:20+08:00" class="media-meta text-muted">last month</time></small>
-                        </div>
-                      </div></a></li>
-                  <li class="dropdown-menu-footer"><a href="javascript:void(0)" class="dropdown-item text-muted text-xs-center">Read all messages</a></li>
-                </ul>
-              </li>
-              <li class="dropdown dropdown-user nav-item"><a href="#" data-toggle="dropdown" class="dropdown-toggle nav-link dropdown-user-link"><span class="avatar avatar-online"><img src="../../../robust-assets/images/portrait/small/avatar-s-1.png" alt="avatar"><i></i></span><span class="user-name">John Doe</span></a>
-                <div class="dropdown-menu dropdown-menu-right"><a href="#" class="dropdown-item"><i class="icon-head"></i> Edit Profile</a><a href="#" class="dropdown-item"><i class="icon-mail6"></i> My Inbox</a><a href="#" class="dropdown-item"><i class="icon-clipboard2"></i> Task</a><a href="#" class="dropdown-item"><i class="icon-calendar5"></i> Calender</a>
-                  <div class="dropdown-divider"></div><a href="#" class="dropdown-item"><i class="icon-power3"></i> Logout</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <div id="fullscreen-search" class="fullscreen-search">
-      <form class="fullscreen-search-form">
-        <input type="search" placeholder="Search..." class="fullscreen-search-input">
-        <button type="submit" class="fullscreen-search-submit">Search</button>
-      </form>
-      <div class="fullscreen-search-content">
-        <div class="fullscreen-search-options">
-          <div class="row">
-            <div class="col-sm-12">
-              <fieldset>
-                <label class="custom-control custom-checkbox display-inline">
-                  <input type="checkbox" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description m-0">All</span>
-                </label>
-                <label class="custom-control custom-checkbox display-inline">
-                  <input type="checkbox" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description m-0">People</span>
-                </label>
-                <label class="custom-control custom-checkbox display-inline">
-                  <input type="checkbox" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description m-0">Project</span>
-                </label>
-                <label class="custom-control custom-checkbox display-inline">
-                  <input type="checkbox" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description m-0">Task</span>
-                </label>
-              </fieldset>
-            </div>
-          </div>
-        </div>
-        <div class="fullscreen-search-result mt-2">
-          <div class="row">
-            <div class="col-lg-4">
-              <h3>People</h3>
-              <div class="media"><a href="#" class="media-left"><img src="../../../robust-assets/images/portrait/small/avatar-s-2.png" alt="Generic placeholder image" class="media-object rounded-circle"></a>
-                <div class="media-body">
-                  <h5 class="media-heading"><a href="#">Karmen Dartez</a></h5>
-                  <p class="mb-0"><span class="tag tag-pill mr-1 tag-danger">JavaScript</span><span class="tag tag-pill mr-1 tag-primary">HTML</span></p>
-                  <p><span class="font-weight-bold">Sr. Developer - </span><a href="mailto:john@example.com">karmen@example.com</a></p>
-                </div>
-              </div>
-              <div class="media"><a href="#" class="media-left"><img src="../../../robust-assets/images/portrait/small/avatar-s-3.png" alt="Generic placeholder image" class="media-object rounded-circle"></a>
-                <div class="media-body">
-                  <h5 class="media-heading"><a href="#">Scot Loh</a></h5>
-                  <p class="mb-0"><span class="tag tag-pill mr-1 tag-danger">PhotoShop</span><span class="tag tag-pill mr-1 tag-warning">UX</span></p>
-                  <p><span class="font-weight-bold">Sr. UI/UX Desugner - </span><a href="mailto:john@example.com">scot@example.com</a></p>
-                </div>
-              </div>
-              <div class="media"><a href="#" class="media-left"><img src="../../../robust-assets/images/portrait/small/avatar-s-5.png" alt="Generic placeholder image" class="media-object rounded-circle"></a>
-                <div class="media-body">
-                  <h5 class="media-heading"><a href="#">Kim Willmore</a></h5>
-                  <p class="mb-0"><span class="tag tag-pill mr-1 tag-warning">CSS</span><span class="tag tag-pill mr-1 tag-danger">HTML</span></p>
-                  <p><span class="font-weight-bold">UI Developer - </span><a href="mailto:john@example.com">kim@example.com</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <h3>Project</h3>
-              <div class="media">
-                <div class="media-body">
-                  <h5 class="media-heading"><a href="#">WordPress Template Support</a></h5>
-                  <progress value="25" max="100" class="progress progress-xs progress-success mb-0">25%</progress>
-                  <p class="mb-0">Collicitudin vel metus scelerisque ante  commodo.</p>
-                  <p><span class="tag tag-pill tag-success">In Progress</span><span class="tag tag-default tag-default float-sm-right">25% Completed</span></p>
-                </div>
-              </div>
-              <div class="media">
-                <div class="media-body">
-                  <h5 class="media-heading"><a href="#">Application UI/UX</a></h5>
-                  <progress value="100" max="100" class="progress progress-xs progress-info mb-0">100%</progress>
-                  <p class="mb-0">Cetus scelerisque ante sollicitudin commodo.</p>
-                  <p><span class="tag tag-pill tag-info">Completed</span><span class="tag tag-default tag-default float-sm-right">100% Completed</span></p>
-                </div>
-              </div>
-              <div class="media">
-                <div class="media-body">
-                  <h5 class="media-heading"><a href="#">SEO Project</a></h5>
-                  <progress value="65" max="100" class="progress progress-xs progress-warning mb-0">65%</progress>
-                  <p class="mb-0">Notifications scelerisque ante sollicitudin commodo.</p>
-                  <p><span class="tag tag-pill tag-warning">Delayed</span><span class="tag tag-default tag-default float-sm-right">65% Completed</span></p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <h3>Task</h3>
-              <div class="media">
-                <div class="media-body">
-                  <h5 class="media-heading"><a href="#">Create the new layout for menu</a></h5>
-                  <p class="mb-0">Pcelerisque ulla vel metus  ante sollicitudin commodo.</p>
-                  <p><span class="tag tag-pill tag-danger">Open</span><span class="tag tag-default tag-default tag-default tag-icon float-sm-right"><i class="icon-calendar5"></i> 22 January, 16</span></p>
-                </div>
-              </div>
-              <div class="media">
-                <div class="media-body">
-                  <h5 class="media-heading"><a href="#">Addition features on footer</a></h5>
-                  <p class="mb-0">Tuaiulla vel metus scelerisque ante sollicitudin commodo.</p>
-                  <p><span class="tag tag-pill tag-warning">On hold</span><span class="tag tag-default tag-default tag-default tag-icon float-sm-right"><i class="icon-calendar5"></i> 24 January, 16</span></p>
-                </div>
-              </div>
-              <div class="media">
-                <div class="media-body">
-                  <h5 class="media-heading"><a href="#">Remove TODO comments</a></h5>
-                  <p class="mb-0">Mulullametu vel  scelerisque ante sollicitudin commodo.</p>
-                  <p><span class="tag tag-pill tag-info">Resolved</span><span class="tag tag-default tag-default tag-default tag-icon float-sm-right"><i class="icon-calendar5"></i> 25 January, 16</span></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div><span class="fullscreen-search-close"></span>
-    </div>
-    <div class="fullscreen-search-overlay"></div>
+@section('cuerpo')
 
     <!-- ////////////////////////////////////////////////////////////////////////////-->
-        <!-- main menu-->
-    <div class="main-menu menu-dark menu-fixed menu-shadow menu-border menu-accordion">
+
+
+    <!-- main menu-->
+    <div id="main-menu" data-scroll-to-active="true" class="main-menu menu-dark menu-fixed menu-shadow menu-accordion">
       <!-- main menu header-->
+      <div class="main-menu-header">
+        <input type="text" placeholder="Search" class="menu-search form-control round"/>
+      </div>
       <!-- / main menu header-->
       <!-- main menu content-->
       <div class="main-menu-content">
         <ul id="main-menu-navigation" data-menu="menu-navigation" class="navigation navigation-main">
           <li class=" nav-item"><a href="index.html"><i class="icon-home3"></i><span data-i18n="nav.dash.main" class="menu-title">Dashboard</span><span class="tag tag tag-primary tag-pill float-xs-right mr-2">5</span></a>
             <ul class="menu-content">
-              <li><a href="index.html" data-i18n="nav.dash.ecommerce" class="menu-item">eCommerce</a>
+              <li><a href="index.html" data-i18n="nav.dash.project" class="menu-item">Project</a>
               </li>
-              <li><a href="dashboard-project.html" data-i18n="nav.dash.project" class="menu-item">Project</a>
+              <li><a href="dashboard-ecommerce.html" data-i18n="nav.dash.ecommerce" class="menu-item">eCommerce</a>
               </li>
               <li><a href="dashboard-analytics.html" data-i18n="nav.dash.analytics" class="menu-item">Analytics</a>
               </li>
@@ -848,7 +429,7 @@
           </li>
           <li class=" nav-item"><a href="#"><i class="icon-head"></i><span data-i18n="nav.users.main" class="menu-title">Users</span></a>
             <ul class="menu-content">
-              <li><a href="user-profile.html" data-i18n="nav.users.user_profile" class="menu-item">Users Profile</a>
+              <li class="active"><a href="user-profile.html" data-i18n="nav.users.user_profile" class="menu-item">Users Profile</a>
               </li>
               <li><a href="user-cards.html" data-i18n="nav.users.user_cards" class="menu-item">Users Cards</a>
               </li>
@@ -1533,56 +1114,626 @@
       <!-- main menu footer-->
     </div>
     <!-- / main menu-->
-  @yield('cuerpo')
 
-  <!-- ////////////////////////////////////////////////////////////////////////////-->
+    <div class="robust-content content container-fluid">
+      <div class="content-wrapper">
+        <div class="content-header row">
+          <div class="content-header-left col-md-6 col-xs-12">
+            <h3 class="content-header-title mb-0">User Profile</h3>
+            <p class="text-muted mb-0">User profile page</p>
+          </div>
+          <div class="content-header-right col-md-6 col-xs-12">
+            <div role="group" aria-label="Button group with nested dropdown" class="btn-group float-md-right mt-1">
+              <div role="group" class="btn-group">
+                <button id="btnGroupDrop1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-outline-primary dropdown-toggle dropdown-menu-right"><i class="icon-cog3 icon-left"></i> Settings</button>
+                <div aria-labelledby="btnGroupDrop1" class="dropdown-menu"><a href="card-advance.html" class="dropdown-item">Advanced Card</a><a href="component-buttons-extended.html" class="dropdown-item">Buttons Extended</a></div>
+              </div><a href="calendars-clndr.html" class="btn btn-outline-primary"><i class="icon-calendar5"></i></a><a href="timeline-center.html" class="btn btn-outline-primary"><i class="icon-bar-graph-2"></i></a>
+            </div>
+          </div>
+          <div class="content-header-lead col-xs-12 mt-1">
+            <p class="lead"></p>
+          </div>
+        </div>
+        <div class="content-body"><div id="user-profile">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="card profile-with-cover">
+                <div class="card-img-top img-fluid bg-cover height-300" style="background: url('../../../robust-assets/images/carousel/22.jpg') 50%;"></div>
+                <div class="media profil-cover-details">
+                    <div class="media-left pl-2 pt-2">
+                        <a href="#" class="profile-image">
+                            <img src="../../../robust-assets/images/portrait/small/avatar-s-8.png" class="rounded-circle img-border height-100" alt="Card image">
+                        </a>
+                    </div>
+                    <div class="media-body media-middle row">
+                        <div class="col-xs-6">
+                            <h3 class="card-title">Jose Diaz</h3>
+                        </div>
+                        <div class="col-xs-6 text-xs-right">
+                            <button type="button" class="btn btn-primary hidden-xs-down"><i class="icon-plus4"></i> Follow</button>
+                            <div class="btn-group hidden-md-down" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-success"><i class="icon-speech-bubble"></i> Message</button>
+                                <button type="button" class="btn btn-warning"><i class="icon-cog3"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navbar navbar-light navbar-profile">
+                    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation"></button>
+                    <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+                        <ul class="nav navbar-nav float-xs-right">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"><i class="icon-content-left"></i> Timeline <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="icon-head"></i> Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="icon-briefcase4"></i> Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="icon-heart6"></i> Favourites</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="icon-bell4"></i> Notifications</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <section id="timeline" class="timeline-center timeline-wrapper">
+        <h3 class="page-title text-xs-center">Timeline</h3>
+        <ul class="timeline">
+            <li class="timeline-line"></li>
+            <li class="timeline-group">
+                <a href="#" class="btn btn-primary"><i class="icon-calendar3"></i> Today</a>
+            </li>
+        </ul>
+        <ul class="timeline">
+            <li class="timeline-line"></li>
+            <li class="timeline-item">
+                <div class="timeline-badge">
+                    <span class="bg-red bg-lighten-1" data-toggle="tooltip" data-placement="right" title="Portfolio project work"><i class="icon-flight"></i></span>
+                </div>
+                <div class="timeline-card card border-grey border-lighten-2">
+                    <div class="card-header">
+                        <h4 class="card-title"><a href="#">Portfolio project work</a></h4>
+                        <p class="card-subtitle text-muted mb-0 pt-1">
+                            <span class="font-small-3">5 hours ago</span>
+                        </p>
+                        <a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
+                        <div class="heading-elements">
+                            <ul class="list-inline mb-0">
+                                <li><a data-action="reload"><i class="icon-repeat2"></i></a></li>
+                                <li><a data-action="expand"><i class="icon-expand2"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-body collapse in">
+                        <img class="img-fluid" src="../../../robust-assets/images/portfolio/width-1200/portfolio-1.jpg" alt="Timeline Image 1">
+                        <div class="card-body collapse in">
+                            <div class="card-block">
+                                <p class="card-text">Nullam facilisis fermentum aliquam. Suspendisse ornare dolor vitae libero hendrerit auctor lacinia a ligula. Curabitur elit tellus, porta ut orci sed, fermentum bibendum nisi.</p>
+                                <ul class="list-inline">
+                                    <li class="pr-1"><a href="#" class=""><span class="icon-thumbs-o-up"></span> Like</a></li>
+                                    <li class="pr-1"><a href="#" class=""><span class="icon-chat2"></span> Comment</a></li>
+                                    <li><a href="#" class=""><span class="icon-share4"></span> Share</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-footer px-0 py-0">
+                            <div class="card-block ">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <span class="avatar avatar-online"><img src="../../../robust-assets/images/portrait/small/avatar-s-1.png" alt="avatar"></span>
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <p class="text-bold-600 mb-0"><a href="#">Jason Ansley</a></p>
+                                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.</p>
+                                        <ul class="list-inline">
+                                            <li class="pr-1"><a href="#" class=""><span class="icon-thumbs-o-up"></span> Like</a></li>
+                                            <li class="pr-1"><a href="#" class=""><span class="icon-chat2"></span> Reply</a></li>
+                                        </ul>
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <a href="#">
+                                                    <span class="avatar avatar-online"><img src="../../../robust-assets/images/portrait/small/avatar-s-18.png" alt="avatar"></span>
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <p class="text-bold-600 mb-0"><a href="#">Janice Johnston</a></p>
+                                                <p>Gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</p>
+                                                <ul class="list-inline">
+                                                    <li class="pr-1"><a href="#" class=""><span class="icon-thumbs-o-up"></span> Like</a></li>
+                                                    <li class="pr-1"><a href="#" class=""><span class="icon-chat2"></span> Reply</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-block">
+                                <fieldset class="form-group position-relative has-icon-left mb-0">
+                                    <input type="text" class="form-control" placeholder="Write comments...">
+                                    <div class="form-control-position">
+                                        <i class="icon-speech-bubble"></i>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-item mt-3">
+                <div class="timeline-badge">
+                    <span class="avatar avatar-online" data-toggle="tooltip" data-placement="left" title="Eu pid nunc urna integer"><img src="../../../robust-assets/images/portrait/small/avatar-s-14.png" alt="avatar"></span>
+                </div>
+                <div class="timeline-card card border-grey border-lighten-2">
+                    <div class="card-header">
+                        <h4 class="card-title"><a href="#">Sofia Orav</a></h4>
+                        <p class="card-subtitle text-muted mb-0 pt-1">
+                            <span class="font-small-3">8 hours ago</span>
+                        </p>
+                        <a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
+                        <div class="heading-elements">
+                            <ul class="list-inline mb-0">
+                                <li><a data-action="reload"><i class="icon-repeat2"></i></a></li>
+                                <li><a data-action="expand"><i class="icon-expand2"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-body collapse in">
+                        <div class="embed-responsive embed-responsive-4by3">
+                            <iframe src="https://player.vimeo.com/video/118589137?title=0&byline=0"></iframe>
+                        </div>
+                        <div class="card-body collapse in">
+                            <div class="card-block">
+                                <p class="card-text">Nullam facilisis fermentum aliquam. Suspendisse ornare dolor vitae libero hendrerit auctor lacinia a ligula. Curabitur elit tellus, porta ut orci sed, fermentum bibendum nisi.</p>
+                                <p class="card-text">Eu pid nunc urna integer, sed, cras tortor scelerisque penatibus facilisis a pulvinar, rhoncus sagittis ut nunc elit! Sociis in et? Rhoncus, vel dignissim in scelerisque. Dolor lacus pulvinar adipiscing adipiscing montes! Elementum risus adipiscing non, cras scelerisque risus penatibus? Massa vut, habitasse, tincidunt!</p>
+                                <ul class="list-inline">
+                                    <li class="pr-1"><a href="#" class=""><span class="icon-thumbs-o-up"></span> Like</a></li>
+                                    <li class="pr-1"><a href="#" class=""><span class="icon-chat2"></span> Comment</a></li>
+                                    <li><a href="#" class=""><span class="icon-share4"></span> Share</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-footer px-0 py-0">
+                            <div class="card-block ">
+                                <fieldset class="form-group position-relative has-icon-left mb-0">
+                                    <input type="text" class="form-control" placeholder="Write comments...">
+                                    <div class="form-control-position">
+                                        <i class="icon-speech-bubble"></i>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-item block">
+                <div class="timeline-badge">
+                    <a title="" data-context="inverse" data-container="body" class="border-silc" href="#" data-original-title="block highlight"></a>
+                </div>
+                <div class="timeline-card card border-grey border-lighten-2">
+                    <div class="card-header">
+                        <div class="text-xs-center">
+                            <p><i class="icon-bar-graph-2 font-medium-4"></i></p>
+                            <h4>Campaign Report</h4>
+                            <p class="timeline-date">18 hours ago</p>
+                            <p>Rhoncus, vel dignissim in scelerisque. Dolor lacus pulvinar adipiscing adipiscing montes! Elementum risus adipiscing non, cras scelerisque risus penatibus? Massa vut, habitasse, tincidunt!</p>
+                        </div>
+                    </div>
+                    <div class="card-body collapse in">
+                        <div class="card-block">
+                            <div class="chart-container">
+                                <div id="stacked-column" class="height-400 overflow-hidden echart-container"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <!-- 2016 -->
+        <ul class="timeline">
+            <li class="timeline-line"></li>
+            <li class="timeline-group">
+                <a href="#" class="btn btn-primary"><i class="icon-calendar3"></i> 2016</a>
+            </li>
+        </ul>
+        <ul class="timeline">
+            <li class="timeline-line"></li>
+            <!-- /.timeline-line -->
+            <li class="timeline-item">
+                <div class="timeline-badge">
+                    <span class="avatar avatar-online" data-toggle="tooltip" data-placement="right" title="Eu pid nunc urna integer"><img src="../../../robust-assets/images/portrait/small/avatar-s-5.png" alt="avatar"></span>
+                </div>
+                <div class="timeline-card card card-inverse">
+                    <img class="card-img img-fluid" src="../../../robust-assets/images/portfolio/width-1200/portfolio-2.jpg" alt="Card image">
+                    <div class="card-img-overlay bg-overlay">
+                        <h4 class="card-title">Good Morning</h4>
+                        <p class="card-text"><small>26 Aug, 2016 at 2.00 A.M</small></p>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">Eu pid nunc urna integer, sed, cras tortor scelerisque penatibus facilisis a pulvinar, rhoncus sagittis ut nunc elit! Sociis in et? Rhoncus, vel dignissim in scelerisque. Dolor lacus pulvinar adipiscing adipiscing montes!</p>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-item mt-3">
+                <div class="timeline-badge">
+                    <span class="bg-teal bg-lighten-1" data-toggle="tooltip" data-placement="left" title="Nullam facilisis fermentum"><i class="icon-check2"></i></span>
+                </div>
+                <div class="timeline-card card border-grey border-lighten-2">
+                    <div class="card-header">
+                        <h4 class="card-title"><a href="#">Sofia Orav</a></h4>
+                        <p class="card-subtitle text-muted mb-0 pt-1">
+                            <span class="font-small-3">18 June, 2016 at 4.50 P.M</span>
+                        </p>
+                        <a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
+                        <div class="heading-elements">
+                            <ul class="list-inline mb-0">
+                                <li><a data-action="reload"><i class="icon-repeat2"></i></a></li>
+                                <li><a data-action="expand"><i class="icon-expand2"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-body collapse in">
+                        <div class="card-body collapse in">
+                            <div class="card-block">
+                                <p class="card-text">Nullam facilisis fermentum aliquam. Suspendisse ornare dolor vitae libero hendrerit auctor lacinia a ligula. Curabitur elit tellus, porta ut orci sed, fermentum bibendum nisi.</p>
+                                <ul class="list-group icheck-task">
+                                    <li class="list-group-item">
+                                        <input type="checkbox" id="input-1"> Cras justo odio</li>
+                                    <li class="list-group-item">
+                                        <input type="checkbox" id="input-2" checked> Dapibus ac facilisis in</li>
+                                    <li class="list-group-item">
+                                        <input type="checkbox" id="input-3"> Morbi leo risus</li>
+                                    <li class="list-group-item">
+                                        <input type="checkbox" id="input-4" disabled checked> Porta ac consectetur ac</li>
+                                    <li class="list-group-item">
+                                        <input type="checkbox" id="input-5"> Vestibulum at eros</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-footer px-0 py-0">
+                            <div class="card-block ">
+                                <fieldset class="form-group position-relative has-icon-left mb-0">
+                                    <input type="text" class="form-control" placeholder="Write comments...">
+                                    <div class="form-control-position">
+                                        <i class="icon-speech-bubble"></i>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="timeline-badge">
+                    <span class="bg-purple bg-lighten-1" data-toggle="tooltip" data-placement="right" title="Nullam facilisis fermentum"><i class="icon-target2"></i></span>
+                </div>
+                <div class="timeline-card card border-grey border-lighten-2">
+                    <div class="card-header">
+                        <h4 class="card-title"><a href="#">Non-ribbon Chord Chart</a></h4>
+                        <p class="card-subtitle text-muted mb-0 pt-1">
+                            <span class="font-small-3">6 Feb, 2016 at 6.00 A.M</span>
+                        </p>
+                        <a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
+                        <div class="heading-elements">
+                            <ul class="list-inline mb-0">
+                                <li><a data-action="reload"><i class="icon-repeat2"></i></a></li>
+                                <li><a data-action="expand"><i class="icon-expand2"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-body collapse in">
+                        <div class="card-body collapse in">
+                            <div class="card-block">
+                                <p class="card-text">Nullam facilisis fermentum aliquam. Suspendisse ornare dolor vitae libero hendrerit auctor lacinia a ligula. Curabitur elit tellus, porta ut orci sed, fermentum bibendum nisi.</p>
+                                <div class="chart-container">
+                                    <div id="non-ribbon-chord" class="height-400 overflow-hidden echart-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer px-0 py-0">
+                            <div class="card-block ">
+                                <fieldset class="form-group position-relative has-icon-left mb-0">
+                                    <input type="text" class="form-control" placeholder="Write comments...">
+                                    <div class="form-control-position">
+                                        <i class="icon-speech-bubble"></i>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <!-- 2015 -->
+        <ul class="timeline">
+            <li class="timeline-line"></li>
+            <li class="timeline-group">
+                <a href="#" class="btn btn-primary"><i class="icon-calendar3"></i> 2015</a>
+            </li>
+        </ul>
+        <ul class="timeline">
+            <li class="timeline-line"></li>
+            <!-- /.timeline-line -->
+            <li class="timeline-item block">
+                <div class="timeline-badge">
+                    <a title="" data-context="inverse" data-container="body" class="border-silc" href="#" data-original-title="block highlight"></a>
+                </div>
+                <div class="timeline-card card border-grey border-lighten-2">
+                    <div class="card-header">
+                        <div class="text-xs-center">
+                            <p class="mt-1"><i class="icon-image4 font-medium-4"></i></p>
+                            <h4>Media Gallery</h4>
+                            <p class="timeline-date">July 1, 2015</p>
+                            <p>Eu pid nunc urna integer, sed, cras tortor scelerisque penatibus facilisis a pulvinar, rhoncus sagittis ut nunc elit! Sociis in et?</p>
+                        </div>
+                    </div>
+                    <!-- Image grid -->
+                    <div class="card-body collapse in">
+                        <div class="card-block my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                            <div class="row">
+                                <figure class="col-md-3 col-sm-6 col-xs-12" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                    <a href="../../../robust-assets/images/gallery/1.jpg" itemprop="contentUrl" data-size="480x360">
+                                        <img class="img-thumbnail img-fluid" src="../../../robust-assets/images/gallery/1.jpg" itemprop="thumbnail" alt="Image description" />
+                                    </a>
+                                </figure>
+                                <figure class="col-md-3 col-sm-6 col-xs-12" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                    <a href="../../../robust-assets/images/gallery/2.jpg" itemprop="contentUrl" data-size="480x360">
+                                        <img class="img-thumbnail img-fluid" src="../../../robust-assets/images/gallery/2.jpg" itemprop="thumbnail" alt="Image description" />
+                                    </a>
+                                </figure>
+                                <figure class="col-md-3 col-sm-6 col-xs-12" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                    <a href="../../../robust-assets/images/gallery/3.jpg" itemprop="contentUrl" data-size="480x360">
+                                        <img class="img-thumbnail img-fluid" src="../../../robust-assets/images/gallery/3.jpg" itemprop="thumbnail" alt="Image description" />
+                                    </a>
+                                </figure>
+                                <figure class="col-md-3 col-sm-6 col-xs-12" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                    <a href="../../../robust-assets/images/gallery/4.jpg" itemprop="contentUrl" data-size="480x360">
+                                        <img class="img-thumbnail img-fluid" src="../../../robust-assets/images/gallery/4.jpg" itemprop="thumbnail" alt="Image description" />
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="row">
+                                <figure class="col-md-3 col-sm-6 col-xs-12" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                    <a href="../../../robust-assets/images/gallery/5.jpg" itemprop="contentUrl" data-size="480x360">
+                                        <img class="img-thumbnail img-fluid" src="../../../robust-assets/images/gallery/5.jpg" itemprop="thumbnail" alt="Image description" />
+                                    </a>
+                                </figure>
+                                <figure class="col-md-3 col-sm-6 col-xs-12" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                    <a href="../../../robust-assets/images/gallery/6.jpg" itemprop="contentUrl" data-size="480x360">
+                                        <img class="img-thumbnail img-fluid" src="../../../robust-assets/images/gallery/6.jpg" itemprop="thumbnail" alt="Image description" />
+                                    </a>
+                                </figure>
+                                <figure class="col-md-3 col-sm-6 col-xs-12" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                    <a href="../../../robust-assets/images/gallery/7.jpg" itemprop="contentUrl" data-size="480x360">
+                                        <img class="img-thumbnail img-fluid" src="../../../robust-assets/images/gallery/7.jpg" itemprop="thumbnail" alt="Image description" />
+                                    </a>
+                                </figure>
+                                <figure class="col-md-3 col-sm-6 col-xs-12" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                    <a href="../../../robust-assets/images/gallery/8.jpg" itemprop="contentUrl" data-size="480x360">
+                                        <img class="img-thumbnail img-fluid" src="../../../robust-assets/images/gallery/8.jpg" itemprop="thumbnail" alt="Image description" />
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="row">
+                                <figure class="col-md-3 col-sm-6 col-xs-12" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                    <a href="../../../robust-assets/images/gallery/9.jpg" itemprop="contentUrl" data-size="480x360">
+                                        <img class="img-thumbnail img-fluid" src="../../../robust-assets/images/gallery/9.jpg" itemprop="thumbnail" alt="Image description" />
+                                    </a>
+                                </figure>
+                                <figure class="col-md-3 col-sm-6 col-xs-12" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                    <a href="../../../robust-assets/images/gallery/10.jpg" itemprop="contentUrl" data-size="480x360">
+                                        <img class="img-thumbnail img-fluid" src="../../../robust-assets/images/gallery/10.jpg" itemprop="thumbnail" alt="Image description" />
+                                    </a>
+                                </figure>
+                                <figure class="col-md-3 col-sm-6 col-xs-12" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                    <a href="../../../robust-assets/images/gallery/11.jpg" itemprop="contentUrl" data-size="480x360">
+                                        <img class="img-thumbnail img-fluid" src="../../../robust-assets/images/gallery/11.jpg" itemprop="thumbnail" alt="Image description" />
+                                    </a>
+                                </figure>
+                                <figure class="col-md-3 col-sm-6 col-xs-12" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                    <a href="../../../robust-assets/images/gallery/12.jpg" itemprop="contentUrl" data-size="480x360">
+                                        <img class="img-thumbnail img-fluid" src="../../../robust-assets/images/gallery/12.jpg" itemprop="thumbnail" alt="Image description" />
+                                    </a>
+                                </figure>
+                            </div>
+                        </div>
+                        <!--/ Image grid -->
+                        <!-- Root element of PhotoSwipe. Must have class pswp. -->
+                        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+                            <!-- Background of PhotoSwipe. 
+                     It's a separate element as animating opacity is faster than rgba(). -->
+                            <div class="pswp__bg"></div>
+                            <!-- Slides wrapper with overflow:hidden. -->
+                            <div class="pswp__scroll-wrap">
+                                <!-- Container that holds slides. 
+                        PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                        Don't modify these 3 pswp__item elements, data is added later on. -->
+                                <div class="pswp__container">
+                                    <div class="pswp__item"></div>
+                                    <div class="pswp__item"></div>
+                                    <div class="pswp__item"></div>
+                                </div>
+                                <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                                <div class="pswp__ui pswp__ui--hidden">
+                                    <div class="pswp__top-bar">
+                                        <!--  Controls are self-explanatory. Order can be changed. -->
+                                        <div class="pswp__counter"></div>
+                                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                                        <button class="pswp__button pswp__button--share" title="Share"></button>
+                                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                                        <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                                        <!-- element will get class pswp__preloader-active when preloader is running -->
+                                        <div class="pswp__preloader">
+                                            <div class="pswp__preloader__icn">
+                                                <div class="pswp__preloader__cut">
+                                                    <div class="pswp__preloader__donut"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                                        <div class="pswp__share-tooltip"></div>
+                                    </div>
+                                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                                    </button>
+                                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                                    </button>
+                                    <div class="pswp__caption">
+                                        <div class="pswp__caption__center"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ PhotoSwipe -->
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="timeline-badge">
+                    <span class="bg-warning bg-darken-1" data-toggle="tooltip" data-placement="right" title="Application API Support"><i class="icon-help2"></i></span>
+                </div>
+                <div class="timeline-card card border-grey border-lighten-2">
+                    <div class="card-header">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <span class="avatar avatar-md avatar-busy"><img src="../../../robust-assets/images/portrait/small/avatar-s-18.png" alt="avatar"></span>
+                                    <i></i>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="card-title"><a href="#">Application API Support</a></h4>
+                                <p class="card-subtitle text-muted mb-0 pt-1">
+                                    <span class="font-small-3">15 Oct, 2015 at 8.00 A.M</span>
+                                    <span class="tag tag-pill tag-default tag-warning float-xs-right">High</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body collapse in">
+                        <img class="img-fluid" src="../../../robust-assets/images/portfolio/width-1200/portfolio-3.jpg" alt="Timeline Image 1">
+                        <div class="card-body collapse in">
+                            <div class="card-block">
+                                <p class="card-text">Nullam facilisis fermentum aliquam. Suspendisse ornare dolor vitae libero hendrerit auctor lacinia a ligula. Curabitur elit tellus, porta ut orci sed, fermentum bibendum nisi.</p>
+                                <ul class="list-inline">
+                                    <li class="pr-1"><a href="#" class=""><span class="icon-chat2"></span> Comment</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-footer px-0 py-0">
+                            <div class="card-block">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <span class="avatar avatar-online"><img src="../../../robust-assets/images/portrait/small/avatar-s-4.png" alt="avatar"></span>
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <p class="text-bold-600 mb-0"><a href="#">Crystal Lawson</a></p>
+                                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.</p>
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <a href="#">
+                                                    <span class="avatar avatar-online"><img src="../../../robust-assets/images/portrait/small/avatar-s-6.png" alt="avatar"></span>
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <p class="text-bold-600 mb-0"><a href="#">Rafila Găitan</a></p>
+                                                <p>Gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <fieldset class="form-group position-relative has-icon-left mb-0">
+                                    <input type="text" class="form-control" placeholder="Write comments...">
+                                    <div class="form-control-position">
+                                        <i class="icon-speech-bubble"></i>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-item mt-3">
+                <div class="timeline-badge">
+                    <span class="bg-amber bg-darken-1" data-toggle="tooltip" data-placement="left" title="Quote of the day"><i class="icon-smile"></i></span>
+                </div>
+                <div class="timeline-card card border-grey border-lighten-2">
+                    <div class="card-header">
+                        <h4 class="card-title"><a href="#">Quote of the day</a></h4>
+                        <p class="card-subtitle text-muted mb-0 pt-1">
+                            <span class="font-small-3">03 March, 2015 at 5 P.M</span>
+                        </p>
+                    </div>
+                    <div class="card-body collapse in">
+                        <img class="img-fluid" src="../../../robust-assets/images/portfolio/width-600/portfolio-3.jpg" alt="Timeline Image 1">
+                        <div class="card-block">
+                            <blockquote class="card-blockquote">
+                                <p class="card-text">Eu pid nunc urna integer, sed, cras tortor scelerisque penatibus facilisis a pulvinar, rhoncus sagittis ut nunc elit! Sociis in et?</p>
+                                <footer>Someone famous in
+                                    <cite title="Source Title"> - Source Title</cite>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <!-- 2014 -->
+        <ul class="timeline">
+            <li class="timeline-line"></li>
+            <li class="timeline-group">
+                <a href="#" class="btn btn-primary"><i class="icon-calendar3"></i> 2014</a>
+            </li>
+        </ul>
+        <ul class="timeline">
+            <li class="timeline-line"></li>
+            <!-- /.timeline-line -->
+            <li class="timeline-item block">
+                <div class="timeline-badge">
+                    <a title="" data-context="inverse" data-container="body" class="border-silc" href="#" data-original-title="block highlight"></a>
+                </div>
+                <div class="timeline-card card border-grey border-lighten-2">
+                    <div class="card-header">
+                        <div class="text-xs-center">
+                            <p><i class="icon-location4 font-medium-4"></i></p>
+                            <h4>Moved to Brooklyn</h4>
+                            <p class="timeline-date">Jan 1, 2014</p>
+                            <p>Eu pid nunc urna integer, sed, cras tortor scelerisque penatibus facilisis a pulvinar, rhoncus sagittis ut nunc elit! Sociis in et? Rhoncus, vel dignissim in scelerisque. Dolor lacus pulvinar adipiscing adipiscing montes! Elementum risus adipiscing non, cras scelerisque risus penatibus? Massa vut, habitasse, tincidunt!</p>
+                        </div>
+                    </div>
+                    <div class="card-body collapse in">
+                        <div class="card-block">
+                            <div id="moved-brooklyn" class="height-450"></div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <!-- 2014 -->
+        <ul class="timeline">
+            <li class="timeline-line"></li>
+            <li class="timeline-group">
+                <a href="#" class="btn btn-primary"><i class="icon-calendar3"></i> Founded in 2012</a>
+            </li>
+        </ul>
+    </section>
+</div>
 
-  
-  <footer class="footer footer-dark footer-fixed">
-      <p class="clearfix text-muted text-sm-center mb-0 px-2"><span class="float-md-left d-xs-block d-md-inline-block">Copyright  &copy; 2017 <a href="https://themeforest.net/user/pixinvent/portfolio?ref=pixinvent" target="_blank" class="text-bold-800 grey darken-2">PIXINVENT </a>, All rights reserved. </span><span class="float-md-right d-xs-block d-md-inline-block">Hand-crafted & Made with <i class="icon-heart5 pink"></i></span></p>
-    </footer>
+        </div>
+      </div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
 
-    <!-- BEGIN VENDOR JS-->
-    <!-- build:js robust-assets/js/vendors.min.js-->
-    <script src="../../../robust-assets/js/core/libraries/jquery.min.js" type="text/javascript"></script>
-    <script src="../../../robust-assets/js/plugins/ui/tether.min.js" type="text/javascript"></script>
-    <script src="../../../robust-assets/js/core/libraries/bootstrap.min.js" type="text/javascript"></script>
-    <script src="../../../robust-assets/js/plugins/menu/jquery.mmenu.all.min.js" type="text/javascript"></script>
-    <script src="../../../robust-assets/js/plugins/extensions/jquery.cookie.js" type="text/javascript"></script>
-    <script src="../../../robust-assets/js/plugins/forms/tags/form-field.js" type="text/javascript"></script>
-    <script src="../../../robust-assets/js/plugins/ui/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
-    <script src="../../../robust-assets/js/plugins/ui/unison.min.js" type="text/javascript"></script>
-    <script src="../../../robust-assets/js/plugins/ui/blockUI.min.js" type="text/javascript"></script>
-    <script src="../../../robust-assets/js/plugins/ui/jquery.matchHeight-min.js" type="text/javascript"></script>
-    <script src="../../../robust-assets/js/plugins/ui/jquery-sliding-menu.js" type="text/javascript"></script>
-    <script src="../../../robust-assets/js/plugins/ui/headroom.min.js" type="text/javascript"></script>
-    <script src="../../../robust-assets/js/plugins/sliders/slick/slick.min.js" type="text/javascript"></script>
-    <script src="../../../robust-assets/js/plugins/ui/screenfull.min.js" type="text/javascript"></script>
-    <!-- /build-->
-    <!-- BEGIN VENDOR JS-->
-    <!-- BEGIN PAGE VENDOR JS-->
-    <script src="../../../robust-assets/js/plugins/charts/raphael-min.js" type="text/javascript"></script>
-    <script src="../../../robust-assets/js/plugins/charts/morris.min.js" type="text/javascript"></script>
-    <script src="../../../robust-assets/js/plugins/charts/chart.min.js" type="text/javascript"></script>
-    <script src="../../../robust-assets/js/plugins/charts/jvector/jquery-jvectormap-2.0.3.min.js" type="text/javascript"></script>
-    <script src="../../../robust-assets/js/plugins/charts/jvector/jquery-jvectormap-world-mill.js" type="text/javascript"></script>
-    <script src="../../../robust-assets/js/plugins/extensions/moment.min.js" type="text/javascript"></script>
-    <script src="../../../robust-assets/js/plugins/extensions/underscore-min.js" type="text/javascript"></script>
-    <script src="../../../robust-assets/js/plugins/extensions/clndr.min.js" type="text/javascript"></script>
-    <script src="../../../robust-assets/js/plugins/charts/echarts/echarts.js" type="text/javascript"></script>
-    <script src="../../../robust-assets/js/plugins/extensions/unslider-min.js" type="text/javascript"></script>
-    <!-- END PAGE VENDOR JS-->
-    <!-- BEGIN ROBUST JS-->
-    <!-- build:js robust-assets/js/app.min.js-->
-    <script src="../../../robust-assets/js/core/robust-menu.js" type="text/javascript"></script>
-    <script src="../../../robust-assets/js/core/robust.js" type="text/javascript"></script>
-    <script src="../../../robust-assets/js/components/ui/fullscreenSearch.js" type="text/javascript"></script>
-    <!-- /build-->
-    <!-- END ROBUST JS-->
-    <!-- BEGIN PAGE LEVEL JS-->
-    <script src="../../../robust-assets/js/components/pages/dashboard-ecommerce.js" type="text/javascript"></script>
-    @yield('js')
-    
-    <!-- END PAGE LEVEL JS-->
-  </body>
-</html>
+
+
+@endsection

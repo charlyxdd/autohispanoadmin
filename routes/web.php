@@ -12,5 +12,12 @@
 */
 
 //Route::get('/', 'SystemController@welcome');
+Route::get('/', 'SystemController@index');
 Route::get('/home', 'SystemController@home');
-Route::get('/', 'SystemController@login');
+Route::get('/login', 'SystemController@login');
+Route::post('/login', 'UsersController@loginU');
+//Route::get('usuario/home','SystemController@home');
+Route::get('/logout', 'SystemController@logout');
+Route::get('/perfil', 'SystemController@perfil');
+//Route::get('/perfil/{idUs}', 'SistemController@perfilPublico');
+

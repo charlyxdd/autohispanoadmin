@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-textdirection="nuevoTemplate" class="loading">
+<html lang="en" data-textdirection="LTR" class="loading">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,7 @@
     <meta name="description" content="Robust admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, robust admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>Login Page - Autohispano Admin</title>
+    <title>Login Page - Robust Admin Template</title>
     <link rel="apple-touch-icon" sizes="60x60" href="../../../robust-assets/ico/apple-icon-60.png">
     <link rel="apple-touch-icon" sizes="76x76" href="../../../robust-assets/ico/apple-icon-76.png">
     <link rel="apple-touch-icon" sizes="120x120" href="../../../robust-assets/ico/apple-icon-120.png">
@@ -19,7 +19,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <!-- BEGIN VENDOR CSS-->
     <!-- build:css robust-assets/css/vendors.min.css-->
-    <link rel="stylesheet" type="text/css" href="../../../robust-assets/css-rtl/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../../robust-assets/css/bootstrap.css">
     <!-- /build-->
     <!-- BEGIN VENDOR CSS-->
     <!-- BEGIN Font icons-->
@@ -34,10 +34,9 @@
     <!-- END Vendor CSS-->
     <!-- BEGIN ROBUST CSS-->
     <!-- build:css robust-assets/css/app.min.css-->
-    <link rel="stylesheet" type="text/css" href="../../../robust-assets/css-rtl/bootstrap-robust.css">
-    <link rel="stylesheet" type="text/css" href="../../../robust-assets/css-rtl/components.css">
-    <link rel="stylesheet" type="text/css" href="../../../robust-assets/css-rtl/colors.css">
-    <link rel="stylesheet" type="text/css" href="../../../robust-assets/css-rtl/custom-rtl.css">
+    <link rel="stylesheet" type="text/css" href="../../../robust-assets/css/bootstrap-robust.css">
+    <link rel="stylesheet" type="text/css" href="../../../robust-assets/css/components.css">
+    <link rel="stylesheet" type="text/css" href="../../../robust-assets/css/colors.css">
     <!-- /build-->
     <!-- END ROBUST CSS-->
     <!-- BEGIN Page Level CSS-->
@@ -46,21 +45,15 @@
     <link rel="stylesheet" type="text/css" href="../../../assets/css/style.css">
     <!-- END Custom CSS-->
   </head>
-  <body data-open="click" data-menu="vertical-menu" data-col="1-column" class="vertical-layout vertical-menu 1-column  blank-page">
+  <body data-open="hover" data-menu="vertical-mmenu" data-col="1-column" class="vertical-layout vertical-mmenu 1-column  blank-page">
     <!-- START PRELOADER-->
 
     <div id="preloader-wrapper">
-      <div id="loader">
-        <div class="line-scale-pulse-out-rapid loader-white">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+      <div id="loader" class="square-spin loader-white">
+        <div></div>
       </div>
-      <div class="loader-section section-top bg-cyan"></div>
-      <div class="loader-section section-bottom bg-cyan"></div>
+      <div class="loader-section section-top bg-success"></div>
+      <div class="loader-section section-bottom bg-success"></div>
     </div>
 
     <!-- END PRELOADER-->
@@ -76,20 +69,19 @@
                 <div class="card-title text-xs-center">
                     <div class="p-1"><img src="../../../robust-assets/images/logo/logo.png" alt="branding logo"></div>
                 </div>
-                <h6 class="card-subtitle line-on-side text-muted text-xs-center font-small-3 pt-2"><span>Login</span></h6>
+                <h6 class="card-subtitle line-on-side text-muted text-xs-center font-small-3 pt-2"><span>Login with Autohispano</span></h6>
             </div>
             <div class="card-body collapse in">
                 <div class="card-block">
-                    <form class="form-horizontal form-simple" method="post" action="{{ url('/login') }}">
-                        {{ csrf_field() }}
+                    <form class="form-horizontal form-simple" method="POST"action="{{ url('/login') }}" >
                         <fieldset class="form-group has-feedback has-icon-left mb-0">
-                            <input type="text" class="form-control form-control-lg input-lg" id="txtCorreo" placeholder="Your Username" required>
+                            <input type="text" class="form-control form-control-lg input-lg" name="txtCorreo" id="user-name" placeholder="Your Username" required>
                             <div class="form-control-position">
                                 <i class="icon-head"></i>
                             </div>
                         </fieldset>
                         <fieldset class="form-group has-feedback has-icon-left">
-                            <input type="password" class="form-control form-control-lg input-lg" id="txtPass" placeholder="Enter Password" required>
+                            <input type="password" class="form-control form-control-lg input-lg" name="txtPass" id="user-password" placeholder="Enter Password" required>
                             <div class="form-control-position">
                                 <i class="icon-key3"></i>
                             </div>
@@ -97,13 +89,14 @@
                         <fieldset class="form-group row">
                             <div class="col-md-6 col-xs-12 text-xs-center text-md-left">
                                 <fieldset>
-                                    <input type="checkbox" id="remember-me" class="chk-remember">
+                                    <input type="checkbox" name="chkRemember "id="remember-me" class="chk-remember">
                                     <label for="remember-me"> Remember Me</label>
                                 </fieldset>
                             </div>
                             <div class="col-md-6 col-xs-12 text-xs-center text-md-right"><a href="recover-password.html" class="card-link">Forgot Password?</a></div>
                         </fieldset>
                         <button type="submit" class="btn btn-primary btn-lg btn-block"><i class="icon-unlock2"></i> Login</button>
+                        {{ csrf_field() }}
                     </form>
                 </div>
             </div>
