@@ -102,7 +102,7 @@ class UsersController extends Controller {
 
     }
 
-   // function perfilPublico($idUs){
+    /*function perfilPublico($idUs){
         $datos=[];
         $perfil=User::find($idUs);
 
@@ -125,6 +125,5 @@ class UsersController extends Controller {
         }
         return view('home', $datos);
 
-    //}
-
+    }*/
 }

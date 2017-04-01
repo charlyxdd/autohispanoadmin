@@ -21,3 +21,5 @@ Route::get('/logout', 'SystemController@logout');
 Route::get('/perfil', 'SystemController@perfil');
 //Route::get('/perfil/{idUs}', 'SistemController@perfilPublico');
 
+Route::get('/api/inventario','apiController@inventario');
+

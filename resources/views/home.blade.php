@@ -262,52 +262,94 @@
 <section id="card-actions">
     <div class="row">
         <div class="col-xs-12">
-            <div class="card">
+            <div class="card" id="inventarioContainer">
                 <div class="card-header">
                     <h4 class="card-title">Tu inventario</h4>
                     <a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
                     <div class="heading-elements">
                         <ul class="list-inline mb-0">
+                            <li>
+                                <nav aria-label="Page navigation" id="paginacionInventario">
+                                    <ul>
+                                        <li class="page-item">
+                                            <a class="page-link no-border"  aria-label="Previous" class="anteriorInventario">
+                                                <span aria-hidden="true">«</span>
+                                                <span class="sr-only">Anterior</span>
+                                            </a>
+                                        </li>
+                                        <li id="paginaInvenatario1" class="paginaInventario page-item active"><a class="page-link no-border"></a></li>
+                                        <li id="paginaInvenatario2" class="paginaInventario page-item"><a class="page-link no-border"></a></li>
+                                        <li id="paginaInvenatario3" class="paginaInventario page-item"><a class="page-link no-border"></a></li>
+
+                                        <li class="page-item">
+                                            <a class="page-link no-border" href="#" aria-label="Next" class="siguienteInventario">
+                                                <span aria-hidden="true">»</span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </li>
                             <li><a data-action="collapse"><i class="icon-minus4"></i></a></li>
                             <li><a data-action="reload" id="cmdRecargarInventario" ><i class="icon-reload"></i></a></li>
                             <li><a data-action="expand"><i class="icon-expand2"></i></a></li>
                             <li><a data-action="close"><i class="icon-cross2"></i></a></li>
-                            <li></li>
-
                         </ul>
                     </div>
                 </div>
                 <div class="card-body collapse in">
                     <div class="card-block">
-                        <div class="row">
-                            <!--cards here-->
-                            @foreach($carros as $carro)
-                            <div class="col-xl-4 col-md-6">
+                        <div class="row" id="carrosContainer">
+                            <!--cards here
+
+                            <div class="col-xl-3 col-md-4">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h4 class="card-title">{{ $carro->marca }} {{ $carro->modelo }}</h4>
+                                        <h4 class="card-title">Marca modelo anio</h4>
                                     </div>
                                     <div class="card-body">
                                         <div class="card-block">
                                             <h5>Basic Card With Header & Footer</h5>
                                         </div>
-                                        <img class="img-fluid" src="../../../robust-assets/images/carousel/02.jpg" alt="Card image cap">
+
+                                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+                                                <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+                                                <li data-target="#carousel-example-generic" data-slide-to="2" class="active"></li>
+                                            </ol>
+                                            <div class="carousel-inner" role="listbox">
+                                                <div class="carousel-item">
+                                                    <img src="../../../robust-assets/images/carousel/02.jpg" alt="First slide">
+                                                </div>
+                                                <div class="carousel-item active left">
+                                                    <img src="../../../robust-assets/images/carousel/03.jpg" alt="Second slide">
+                                                </div>
+                                                <div class="carousel-item next left">
+                                                    <img src="../../../robust-assets/images/carousel/01.jpg" alt="Third slide">
+                                                </div>
+                                            </div>
+                                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                                <span class="icon-prev" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                                <span class="icon-next" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+
+
                                         <div class="card-block">
                                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                             <a href="#" class="card-link">Card link</a>
                                             <a href="#" class="card-link">Another link</a>
                                         </div>
                                     </div>
-                                    <div class="card-footer border-top-blue-grey border-top-lighten-5 text-muted">
-                                        <span class="float-xs-left">3 hours ago</span>
-                                        <span class="float-xs-right">
-                                            <a href="#" class="card-link">Read More <i class="icon-ios-arrow-right"></i></a>
-                                        </span>
-                                    </div>
+
                                 </div>
                             </div>
-                            @endforeach
-
+                            -->
 
                         </div>
                     </div>
